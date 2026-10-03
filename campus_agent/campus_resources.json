@@ -1,0 +1,118 @@
+{
+  "resources": [
+    {
+      "name": "Library",
+      "aliases": ["lib", "library", "media center"],
+      "location": "525 Falconer Street, Jamestown; 260 North Union Street, Olean",
+      "hours": "Jamestown: Monday-Thursday: 8 a.m. - 6 p.m. & Friday: 8 a.m. - 4 p.m.; Cattaraugus: Monday-Thursday: 8 a.m.-4 p.m., Friday: 8 a.m.-1 p.m.",
+      "phone": "716.338.1008 - Jamestown; 716.376.7517 - Olean",
+      "email": "None Listed",
+      "website": "https://www.sunyjcc.edu/support/learning-commons/library/ask",
+      "description": "Reference librarians and library staff can help you with basic questions via chat, frequently asked questions, and phone. If you need more extensive assistance with your research, you are encouraged to visit one of the campus libraries.",
+      "verified_by": "Jerrica Sosa",
+      "last_verified": "2026-10-02"
+    },
+    {
+      "name": "Academic Advising",
+      "aliases": ["advising", "advisor", "counselor"],
+      "location": "None listed",
+      "hours": "By appointment",
+      "phone": "716.338.1065",
+      "email": "SuccessCenter@sunyjcc.edu",
+      "website": "https://www.sunyjcc.edu/support/success-center/advising/get-connected",
+      "description": "Advisors assist students with academic, career, and transfer planning, and are available to all JCC students. Success Navigators assist students in the transition to college and connect them to advisors and other resources",
+      "verified_by": "Sameer Patel",
+      "last_verified": "2026-09-29"
+    },
+    {
+      "name": "Student Food Pantry",
+      "aliases": ["food", "pantry", "meal"],
+      "location": "Jamestown Campus: next to the Campus Bookstore, Hamilton Collegiate Center, first floor; Cattaraugus County Campus: Success Center across from the bookstore, College Center, first floor",
+      "hours": "None listed",
+      "phone": "Jamestown Campus: 716.338.1004; Cattaraugus County Campus: 716.376.7508",
+      "email": "None listed",
+      "website": "https://www.sunyjcc.edu/support/get-help/food-pantry",
+      "description": "Jamestown Community College maintains a food pantry for all students on the Jamestown Campus and Cattaraugus County Campus. We have an assortment of donated food items and hygiene products that we are happy to share.",
+      "verified_by": "Jerrica Sosa",
+      "last_verified": "2026-09-22"
+    },
+    {
+      "name": "Health Center",
+      "aliases": ["medical", "health", "sick", "nurse"],
+      "location": "Jamestown Campus: COCE 122; Cattaraugus County Campus: COLL 139",
+      "hours": "None listed",
+      "phone": "716.338.1013 (Charlene Johnson, General); 716.338.1014 (Shelly Wells, RN, Nurse)",
+      "email": "HealthCenter@sunyjcc.edu",
+      "website": "https://www.sunyjcc.edu/support/health-center",
+      "description": "At Jamestown Community College, our health centers are dedicated to supporting the health and well-being of all students and employees. Our team is here to assist you if you're feeling unwell with a seasonal illness like influenza, RSV, or COVID-19, or have other health concerns.",
+      "verified_by": "Jerrica Sosa",
+      "last_verified": "2026-09-22"
+    },
+    {
+      "name": "Financial Aid Office",
+      "aliases": [
+        "financial aid",
+        "fafsa",
+        "grants",
+        "scholarships",
+        "financial aid office"
+      ],
+      "location": "COCE Floor 1, Jamestown Campus",
+      "hours": "Contact office for hours",
+      "phone": "716.338.1009",
+      "email": "FinancialAid@sunyjcc.edu",
+      "website": "https://www.sunyjcc.edu/support/financial-aid-billing",
+      "description": "JCC Financial Aid & Billing helps students understand their financial aid, student bill, and the different options available to help pay for college. Students can also use this office for questions about FAFSA, financial aid requirements, and their financial aid status.",
+      "verified_by": "Tangie Cummings",
+      "last_verified": "2026-09-29"
+    },
+    {
+      "name": "IT Help Desk",
+      "aliases": ["JCC Help Desk", "help desk"],
+      "location": "Floor 1 of the Hultquist (HULT) building",
+      "hours": "Monday through Friday, 8:30 AM – 4:30 PM",
+      "phone": "716.338.1122",
+      "email": "JCCHelpDesk@mail.sunyjcc.edu",
+      "website": "https://jcc.helpdesk.sunyjcc.edu/servicedesk/customer/user/login?destination=portals",
+      "description": "The Jamestown Community College IT Help Desk serves as the central point of contact for technology support across all JCC campuses. It provides essential technical assistance to students, faculty, and staff to ensure seamless access to the college's digital environment.",
+      "verified_by": "Shant Michaelian",
+      "last_verified": "2026-09-26"
+    },
+    {
+      "name": "Campus Bookstore",
+      "aliases": ["bookstore", "shop", "campus store", "books"],
+      "location": "JCC Campus Store. 525 Falconer Street. Jamestown. NY 14701",
+      "hours": "Mon-Thu: 9:00 AM - 4:30 PM. Fri: 9:00 AM - 2:00 PM. Sat-Sun: Closed",
+      "phone": "(877) 420-1734",
+      "email": "sm8369@bncollege.com",
+      "website": "https://sunyjcc.bncollege.com/",
+      "description": "Provides textbooks. campus merchandise. supplies. and customer support for courses.",
+      "verified_by": "Maryam Fatima",
+      "last_verified": "2026-09-30"
+    },
+    {
+      "name": "Campus Safety",
+      "aliases": ["security", "safety", "police", "emergency", "campus police"],
+      "location": "Jamestown Campus (Hamilton Collegiate Center)",
+      "hours": "Contact office or campus safety cell for active hours",
+      "phone": "716.338.1015",
+      "email": "Not listed",
+      "website": "https://cm.maxient.com/reportingform.php?SUNYJamestownCC&layout_id=5",
+      "description": "Handles emergency situations. incident reporting. campus safety. and security support.",
+      "verified_by": "Maryam Fatima",
+      "last_verified": "2026-09-30"
+    },
+    {
+      "name": "Career Services",
+      "aliases": ["jobs", "careers", "internships", "resume", "employment"],
+      "location": "Jamestown Campus and Cattaraugus County Campus (Olean)",
+      "hours": "Contact office for appointment hours",
+      "phone": "716.338.1061",
+      "email": "Not listed",
+      "website": "https://www.sunyjcc.edu/support/career-services/interest",
+      "description": "Assists students with career advice. job searches. career preparation. and campus visits.",
+      "verified_by": "Maryam Fatima",
+      "last_verified": "2026-09-30"
+    }
+  ]
+}
