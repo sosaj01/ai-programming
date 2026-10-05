@@ -9,16 +9,16 @@ they can get the services they need.
 **Gemini's Limitations**
 
 A large language model (LLM) like Gemini is trained on public information. However, it does
-not have information that is private, local or frequently changing like the information
+not have information that is private, local, or frequently changing like the information
 that may be found in a campus directory. Knowing these limitations and still trying to coax
-an answer out of Gemini can rsult in no answer being returned, an attempt to look it up
-online (where more stale information may be) or a hallucination.
+an answer out of Gemini can result in no answer being returned, an attempt to look it up
+online (where more stale information may be), or a hallucination.
 
 **Why a separate JSON file is used**
 
 1. A JSON file separates data from logic so a future developer can update these office hours
-   without reading or editing Python.
-2. It makes the information independantly reviewable so an instructor, another student or
+   without needing to read or edit Python.
+2. It makes the information independantly reviewable so an instructor, another student, or
    even Student Services can verify the data without having to necessarily understand the code.
 3. It prepares the project for later growth since it's easy to replace a JSON file with a
    database, API, or content management system and the agent wouldn't need to change.
@@ -38,10 +38,8 @@ online (where more stale information may be) or a hallucination.
 
 **What's so bad about wrong info?**
 
-What could go wrong if the campus information in our JSON file is inaccurate?
-Who should be responsible for verifying it?
 If campus information in the JSON file is inaccurate, it renders the agent useless and can
-be harmful to students or who need help. Students will not be able to look up resources and
+be harmful to students or those who need help. Students will not be able to look up resources and
 if they are, they will be given wrong information which will not allow them to access the
 resources they need.
 
