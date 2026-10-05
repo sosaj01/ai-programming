@@ -48,8 +48,15 @@ resources they need.
 Implementing verified_by and last_verified fields will allow us to audit and update the
 system over time and hopefully prevent the agent from dispensing inaccurate information.
 
-**Resource Location Hours Phone Email Website Verified By Date Verified**
-Library
-Tutoring Center
-Advising
-Financial Aid
+**Campus Information**
+| Resource | Location | Hours | Phone | Email | Website | Verified By | Date Verified |
+|---|---|---|---|---|---|---|---|
+| Library | 525 Falconer Street, Jamestown; 260 North Union Street, Olean | Jamestown: Monday-Thursday: 8 a.m. - 6 p.m. & Friday: 8 a.m. - 4 p.m.; Cattaraugus: Monday-Thursday: 8 a.m.-4 p.m., Friday: 8 a.m.-1 p.m. | 716.338.1008 - Jamestown; 716.376.7517 - Olean | None Listed | [Link](https://www.sunyjcc.edu/support/learning-commons/library/ask) | Jerrica Sosa | 2026-10-02 |
+| Academic Advising | None listed | By appointment | 716.338.1065 | SuccessCenter@sunyjcc.edu | [Link](https://www.sunyjcc.edu/support/success-center/advising/get-connected) | Sameer Patel | 2026-09-29 |
+| Student Food Pantry | Jamestown Campus: next to the Campus Bookstore, Hamilton Collegiate Center, first floor; Cattaraugus County Campus: Success Center across from the bookstore, College Center, first floor | None listed | Jamestown Campus: 716.338.1004; Cattaraugus County Campus: 716.376.7508 | None listed | [Link](https://www.sunyjcc.edu/support/get-help/food-pantry) | Jerrica Sosa | 2026-09-22 |
+| Health Center | Jamestown Campus: COCE 122; Cattaraugus County Campus: COLL 139 | None listed | 716.338.1013 (Charlene Johnson, General); 716.338.1014 (Shelly Wells, RN, Nurse) | HealthCenter@sunyjcc.edu | [Link](https://www.sunyjcc.edu/support/health-center) | Jerrica Sosa | 2026-09-22 |
+| Financial Aid Office | COCE Floor 1, Jamestown Campus | Contact office for hours | 716.338.1009 | FinancialAid@sunyjcc.edu | [Link](https://www.sunyjcc.edu/support/financial-aid-billing) | Tangie Cummings | 2026-09-29 |
+| IT Help Desk | Floor 1 of the Hultquist (HULT) building | Monday through Friday, 8:30 AM – 4:30 PM | 716.338.1122 | JCCHelpDesk@mail.sunyjcc.edu | [Link](https://jcc.helpdesk.sunyjcc.edu/servicedesk/customer/user/login?destination=portals) | Shant Michaelian | 2026-09-26 |
+| Campus Bookstore | JCC Campus Store. 525 Falconer Street. Jamestown. NY 14701 | Mon-Thu: 9:00 AM - 4:30 PM. Fri: 9:00 AM - 2:00 PM. Sat-Sun: Closed | (877) 420-1734 | sm8369@bncollege.com | [Link](https://sunyjcc.bncollege.com/) | Maryam Fatima | 2026-09-30 |
+| Campus Safety | Jamestown Campus (Hamilton Collegiate Center) | Contact office or campus safety cell for active hours | 716.338.1015 | Not listed | [Link](https://cm.maxient.com/reportingform.php?SUNYJamestownCC&layout_id=5) | Maryam Fatima | 2026-09-30 |
+| Career Services | Jamestown Campus and Cattaraugus County Campus (Olean) | Contact office for appointment hours | 716.338.1061 | Not listed | [Link](https://www.sunyjcc.edu/support/career-services/interest) | Maryam Fatima | 2026-09-30 |
