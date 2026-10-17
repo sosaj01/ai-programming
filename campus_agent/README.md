@@ -6,7 +6,7 @@ An AI-powered assistant that helps students find information about campus resour
 - 24/7 availability through web interface
 - Conversation history within sessions
 ## Live App
-**URL:** [Add your Streamlit Cloud URL here]
+**URL:** ai-programming-campus-agent.streamlit.app
 ## Local Development
 1. Clone the repository
 2. Create conda environment: `conda create -n ai-agents python=3.11`
