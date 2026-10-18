@@ -4,7 +4,7 @@ app.py - Final version for Lab 3
 Complete Streamlit chat interface with ADK agent integration.
 This file connects to the Campus Resource Assistant agent from Lab 2.
 
-Author: [Student Name]
+Author: Jerrica Sosa
 Course: AI Programming
 """
 

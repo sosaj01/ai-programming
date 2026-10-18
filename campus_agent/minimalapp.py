@@ -4,7 +4,7 @@ minimalapp.py - Starting point for Lab 3
 This is a basic Streamlit chat interface without ADK integration.
 Students will modify this file to add agent connectivity.
 
-Author: [Student Name]
+Author: Jerrica Sosa
 Course: AI Programming
 """
 
