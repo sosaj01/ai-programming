@@ -222,7 +222,7 @@ if prompt := st.chat_input("Ask about campus resources..."):
 		else:
 			# Cache miss: call the agent
 			with st.spinner("Thinking..."):
-				response = asyncio.run(call_agent(prompt))
+				response = asyncio.run(_call_agent_async(prompt))
 				st.markdown(response)
 			# Store in cache for next time
 			st.session_state.response_cache[cache_key] = response
