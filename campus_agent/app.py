@@ -99,45 +99,63 @@ async def get_or_create_session():
     return st.session_state.session_id
 
 
-async def call_agent(prompt: str) -> str:
-    """Send a message to the agent and get the response.
-    This async function:
-    1. Gets the runner and session
-    2. Formats the message for Gemini
-    3. Streams events from the agent
-    4. Extracts the final response text
-    
+async def _call_agent_async(prompt: str, max_retries: int = 3) -> str:
+    """Async implementation of the agent call with retry logic.
+    Handles 503 errors (high demand) by retrying with exponential backoff.
+
     Args:
-        prompt: The user's question about campus resources
-        
+        prompt: The user's question
+        max_retries: Maximum number of attempts (default 3)
+
     Returns:
-        The agent's response as a string
+        The agent's response, or a graceful error message
     """
     runner = get_runner()
     session_id = await get_or_create_session()
     
-    # Create the message in ADK/Gemini format
     message = types.Content(
         role="user",
-        parts=[types.Part(text=prompt)]
+        parts=[types.Part.from_text(text=prompt)]
     )
-    
-    # Run the agent and collect the response
-    response_text = ""
-    async for event in runner.run_async(
-        user_id=USER_ID,
-        session_id=session_id,
-        new_message=message
-    ):
-        # Only process final responses (not streaming chunks or tool events)
-        if event.is_final_response():
-            if event.content and event.content.parts:
-                for part in event.content.parts:
-                    if part.text:
-                        response_text += part.text
-    
-    # Graceful fallback if something goes wrong
-    return response_text or "I couldn't process that request."
+
+    for attempt in range(max_retries):
+        try:
+            response_text = ""
+            async for event in runner.run_async(
+                user_id=USER_ID,
+                session_id=session_id,
+                new_message=message
+            ):
+                if event.is_final_response():
+                    if event.content and event.content.parts:
+                        for part in event.content.parts:
+                            if part.text:
+                                response_text += part.text
+            
+            if response_text:
+                return response_text
+                
+        except Exception as e:
+            error_str = str(e)
+            # Check if this is a temporary overload error
+            is_overloaded = any(
+                keyword in error_str 
+                for keyword in ["503", "UNAVAILABLE", "high demand", "overloaded"]
+            )
+            
+            if is_overloaded and attempt < max_retries - 1:
+                # Exponential backoff: wait 2^attempt seconds
+                wait_time = 2 ** (attempt + 1)
+                await asyncio.sleep(wait_time)
+                continue
+            elif is_overloaded:
+                # We've exhausted all retries
+                return "The service is temporarily busy. Please try again in a few minutes."
+            else:
+                # Re-raise non-overload exceptions so they aren't silently swallowed
+                raise e
+
+    return "I couldn't process that request."
 
 # --- Streamlit UI ---
 
