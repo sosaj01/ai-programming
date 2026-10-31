@@ -159,6 +159,10 @@ locations, and contact information.
 if "messages" not in st.session_state:
     st.session_state.messages = []
 
+# Initialize response cache
+if "response_cache" not in st.session_state:
+    st.session_state.response_cache = {}
+
 # Welcome message on first load
 if not st.session_state.messages:
     with st.chat_message("assistant"):
@@ -181,20 +185,31 @@ for message in st.session_state.messages:
 
 # Handle user input
 if prompt := st.chat_input("Ask about campus resources..."):
-    # Store and display user message
-    st.session_state.messages.append({"role": "user", "content": prompt})
-    
-    with st.chat_message("user"):
-        st.markdown(prompt)
-    
-    # Get agent response with loading indicator
-    with st.chat_message("assistant"):
-        with st.spinner("Thinking..."):
-            response = asyncio.run(call_agent(prompt))
-            st.markdown(response)
-    
-    # Store assistant response
-    st.session_state.messages.append({"role": "assistant", "content": response})
+	# Store and display user message
+	st.session_state.messages.append({"role": "user", "content": prompt})
+
+	with st.chat_message("user"):
+		st.markdown(prompt)
+
+	# Get agent response (check cache first)
+	with st.chat_message("assistant"):
+		# Normalize the prompt for cache lookup
+		cache_key = prompt.lower().strip()
+
+		if cache_key in st.session_state.response_cache:
+			# Cache hit: serve instantly, no API call
+			response = st.session_state.response_cache[cache_key]
+			st.markdown(response)
+			st.caption("⚡Served from cache")
+		else:
+			# Cache miss: call the agent
+			with st.spinner("Thinking..."):
+				response = call_agent(prompt)
+				st.markdown(response)
+			# Store in cache for next time
+			st.session_state.response_cache[cache_key] = response
+
+	st.session_state.messages.append({"role": "assistant", "content": response})
 
 # Sidebar with information and controls
 with st.sidebar:
@@ -211,6 +226,7 @@ with st.sidebar:
     
     if st.button("Clear Conversation"):
         st.session_state.messages = []
+        st.session_state.response_cache = {}
         # Also reset the ADK session for a true fresh start
         if "session_id" in st.session_state:
             del st.session_state.session_id
