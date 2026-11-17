@@ -27,4 +27,6 @@ jobs:
 
       # 4. Run the tests using pytest
       - name: Run tests
+        env:
+          PYTHONPATH: .
         run: pytest
