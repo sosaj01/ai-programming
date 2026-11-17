@@ -1,9 +1,8 @@
 import pytest
 
 try:
-    from campus_agent.agent import get_campus_resource_info
+    from .agent import get_campus_resource_info  # Relative import
 except ImportError:
-    # Fallback import if running tests from inside the campus_agent directory
     from agent import get_campus_resource_info
 
 def test_library_lookup():
