@@ -113,6 +113,24 @@
       "description": "Assists students with career advice. job searches. career preparation. and campus visits.",
       "verified_by": "Maryam Fatima",
       "last_verified": "2026-09-30"
+    },
+    {
+      "name": "Tutoring Center",
+      "aliases": [
+        "tutoring",
+        "peer tutoring",
+        "academic support",
+        "study groups",
+        "learning commons"
+      ],
+      "location": "Jamestown Campus (HULT Floor 1) and Cattaraugus County Campus (LLAC Floor 1)",
+      "hours": "Schedule via Starfish or contact office for appointment hours",
+      "phone": "716.338.1008 (Jamestown) / 716.376.7517 (Cattaraugus)",
+      "email": "Not listed",
+      "website": "https://www.sunyjcc.edu/support/learning-commons/learning-center/tutoring",
+      "description": "Provides free one-on-one peer tutoring support on campus or via Zoom to help students review course concepts, solve academic problems, and prepare for exams.",
+      "verified_by": "Jerrica Sosa",
+      "last_verified": "2026-11-17"
     }
   ]
 }
