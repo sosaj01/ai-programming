@@ -1,9 +1,6 @@
 import pytest
 
-try:
-    from .agent import get_campus_resource_info  # Relative import
-except ImportError:
-    from agent import get_campus_resource_info
+from campus_agent.agent import get_campus_resource_info
 
 def test_library_lookup():
     """TEST 1: Verify standard library resource lookup."""
