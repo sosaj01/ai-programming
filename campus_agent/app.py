@@ -7,7 +7,7 @@ This file connects to the Campus Resource Assistant agent from Lab 2.
 Author: Jerrica Sosa
 Course: AI Programming
 """
-
+# Version 1.1 - added auto-redeploy
 import streamlit as st
 import asyncio
 import os
