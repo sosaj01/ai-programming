@@ -1,6 +1,7 @@
 import pytest
 
-from campus_agent.agent import get_campus_resource_info
+# Use a relative import since agent.py is in the exact same folder
+from .agent import get_campus_resource_info
 
 def test_library_lookup():
     """TEST 1: Verify standard library resource lookup."""

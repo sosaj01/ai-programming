@@ -15,16 +15,17 @@ jobs:
       - name: Set up Python 3.11
         uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
+          python-version: '3.11'
 
-      # Install pytest and your project requirements
+      # Install dependencies using the path to the nested requirements file
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install pytest
-          pip install -r requirements.txt
+          pip install -r campus_agent/requirements.txt
 
+      # Run pytest pointing directly to the campus_agent folder
       - name: Run tests
         env:
           PYTHONPATH: .
-        run: pytest -v
+        run: pytest campus_agent/ -v
